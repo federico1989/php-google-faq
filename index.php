@@ -28,6 +28,11 @@
         <title>Google faq</title>
     </head>
     <body>
-
+            <?php 
+                foreach ($frequentQuestions as $form) {?>
+                    <h2><?php echo $form["question"];?></h2>
+                    <p><?php echo $form["answer"];?></p>
+                <?php }
+            ?>
     </body>
 </html>
